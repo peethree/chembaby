@@ -18,14 +18,15 @@ automates plotting wavelength by absorption graphs from raw data.
   
 #### ALTERNATIVELY:
   
-* download chembaby.exe d
+* download chembaby.exe (the three zip files)
+* extract the program into a folder
 * put your data in the same folder as the program
 * open a the windows cmd
 * run 'chembaby.py "file.txt", and optionally up to 2 more .txt files, seperated by a space
 * the program will then output a graph which you can save or edit
   
   ![cmdexample](https://i.imgur.com/CuUdf3z.png)
-  ![cmdexample](https://i.imgur.com/mVAuGA0.png)
+  ![graphexample](https://i.imgur.com/mVAuGA0.png)
 #
 
 admittedly an ugly heuristic approach with much room for improvement but for now it gets the job done.
