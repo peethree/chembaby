@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def main():
 
-    # if 1 or commandline argument is given
+    # if 1 or more commandline argument(s) is given
     if len(sys.argv) >= 2:      
             try:   
                 # unpacks list into individual arguments which are then passed into the clean_data function           
