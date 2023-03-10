@@ -6,14 +6,14 @@ def main():
     # if 1 or more commandline argument(s) is given
     if len(sys.argv) >= 2:      
             try:   
-                # unpacks list into individual arguments which are then passed into the clean_data function           
+                # unpacks command line argument files into individual arguments which are then passed into the clean_data function           
                 data_dict = clean_data(*sys.argv[1:])
                 plot_data(data_dict)
             except:
                 sys.exit("invalid file or text file doesn't exist")   
     
 
-# accepts variable amount of files, stores 'files' into tuple named files
+# this function accepts a variable amount of files. it stores 'files' into a tuple named files
 def clean_data(*files):
 
     # empty dictionary to store lists of 'file data' into
@@ -36,32 +36,47 @@ def clean_data(*files):
         #store each file's data in the dictionary
         data_dict[file] = data
     return data_dict
-        
+
+# add ways to color the graphs
+def get_colors():
+
+    colors = ['#FF2EAD', 'teal', 'blue', 'red', 'green', 'black', 'purple', 'orange']    
+    return colors     
 
 def plot_data(data_dict):
 
     # figure and axes
-    _, ax = plt.subplots()
+    _, axes = plt.subplots()
+
+    # colors for graph and legend
+    colorscheme = get_colors()
+    axes.set_prop_cycle(color=colorscheme)
         
     # Loop over each file in the dictionary and extract the x, y values for the graph
-    for file, data in data_dict.items():
+    for file, data in data_dict.items(): # file is the key, data is the value
         # produce an iterable of tuples 
         wavelengths, absorbances = zip(*data)
-        # get at name for legend
+        # get at label name for legend
         _, substance_name = file.split(sep="-")
         substance_name = substance_name.replace(".txt", "")        
-        ax.plot(wavelengths, absorbances, label=substance_name)
+        axes.plot(wavelengths, absorbances, label=substance_name)
+        
 
     # we only care about y values ranging from x:300 to 1000
-    ax.set_xlim(300, 1000)
+    axes.set_xlim(300, 1000)
     # wavelength in nanometers
-    ax.set_xlabel('λ [nm]')
+    axes.set_xlabel('λ [nm]')
     # absorption in arbitrary units
-    ax.set_ylabel('Abs. [a.u]')
-    ax.legend(loc='upper right')         
+    axes.set_ylabel('Abs. [a.u]')
+    legend = axes.legend(loc='upper right')   
+    
+    # make legend width thicker   
+    for line in legend.get_lines():
+        line.set_linewidth(3.0)   
     
     plt.show()
 
 
 if __name__ == "__main__":
     main()
+
