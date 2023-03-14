@@ -21,8 +21,8 @@ automates plotting wavelength by absorption graphs from raw data.
 * download chembaby.exe (the three zip files)
 * extract the program into a folder
 * put your data in the same folder as the program
-* open a the windows cmd
-* run 'chembaby.py "file.txt", and optionally more .txt files, each seperated by a space
+* open a cmd terminal in this folder
+* run 'python chembaby.py "file.txt"', and optionally more .txt files, each seperated by a space
 * the program will then output a graph which you can save or edit 
 #  
   ![cmdexample](https://i.imgur.com/CuUdf3z.png)  
