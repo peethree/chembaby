@@ -2,7 +2,7 @@
 
 #
 
-automates plotting wavelength by absorption graphs from raw data.
+automates plotting wavelength by absorption graphs from raw measuring data.
 
 #
 
