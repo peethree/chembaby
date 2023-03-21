@@ -8,6 +8,16 @@ automates plotting wavelength by absorption graphs from raw measuring data.
 
 #### how to use:
 
+* download chembabyapp.py (six '7-zip' files, to be extracted)
+* open the program
+* navigate to where you've stored your .txt files that need plotting
+* highlight file(s), using ctrl+click in case you want to plot more than 1 file at once
+* the program will then output a graph which you can save or edit 
+
+
+  
+#### ALTERNATIVELY:
+  
 1. download chembaby.py and requirements.txt
 2. open the program in an IDE such as VSCode
 3. install the requirements from requirements.txt by writing the following in the terminal window: 'pip install -r requirements.txt'
@@ -15,19 +25,12 @@ automates plotting wavelength by absorption graphs from raw measuring data.
 5. place the text files in the same folder as the chembaby.py app so that the ide can read them
 6. run 'python chembaby.py "file.txt"', and optionally more.
 7. the program will then show a graph of the wavelength values, starting at 300 nm, up to 1000nm and the absorption values in arbitrary units.
+
   
-#### ALTERNATIVELY:
-  
-* download chembaby.exe (the three zip files)
-* extract the program into a folder
-* put your data in the same folder as the program
-* open a cmd terminal in this folder
-* run 'python chembaby.py "file.txt"', and optionally more .txt files, each seperated by a space
-* the program will then output a graph which you can save or edit 
 #  
-  ![cmdexample](https://i.imgur.com/CuUdf3z.png)  
+  ![interfaceexample](https://i.imgur.com/f8V8nMy.png)  
 #  
-  ![graphexample](https://i.imgur.com/mVAuGA0.png)
+  ![graphexample](https://i.imgur.com/dNOujGX.png)
 #
 
 
