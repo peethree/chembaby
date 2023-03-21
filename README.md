@@ -8,11 +8,12 @@ automates plotting wavelength by absorption graphs from raw measuring data.
 
 #### how to use:
 
-* download chembabyapp.py (six '7-zip' files, to be extracted)
+* download the six '7-zip' files in the "chembaby app" folder (the source code of the app is also in this folder, but does not need to be downloaded)
+* extract the files by right clicking the first archive file (001), followed by selecting "Open archive". Then select all 6 files and extract.
 * open the program
 * navigate to where you've stored your .txt files that need plotting
-* highlight file(s), using ctrl+click in case you want to plot more than 1 file at once
-* the program will then output a graph which you can save or edit 
+* select file(s), use ctrl+click in case you want to plot more than 1 file at once
+* the program will then output a graph which you can save and edit.
 
 
   
