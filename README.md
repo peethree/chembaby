@@ -5,6 +5,8 @@
 automates plotting wavelength by absorption graphs from raw measuring data.
 
 #
+![sampledata](https://i.imgur.com/vhHaqKq.png)
+#
 
 #### how to use:
 
