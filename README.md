@@ -11,7 +11,7 @@ automates plotting wavelength by absorption graphs from raw measuring data.
 
 #### how to use:
 
-* download the six '7-zip' files in the "chembaby app" folder (the source code of the app is also in this folder, but does not need to be downloaded)
+* download the six '7-zip' files in the 'chembaby app' folder (the source code of the app is also in this folder, but does not need to be downloaded)
 * extract the files by right clicking the first archive file (001), followed by selecting "Open archive". Then select all 6 files and extract.
 * open the program
 * navigate to where you've stored your .txt files that need plotting
@@ -30,6 +30,9 @@ automates plotting wavelength by absorption graphs from raw measuring data.
 6. run 'python chembaby.py "file.txt"', and optionally more.
 7. the program will then show a graph of the wavelength values, starting at 300 nm, up to 1000nm and the absorption values in arbitrary units.
 
+
+
+
   
 #  
   ![interfaceexample](https://i.imgur.com/f8V8nMy.png)  
@@ -37,4 +40,6 @@ automates plotting wavelength by absorption graphs from raw measuring data.
   ![graphexample](https://i.imgur.com/dNOujGX.png)
 #
 
+To clarify: the way legend naming works, is by splitting the name of the text file passed into the program. It takes whatever is **AFTER** a **single** hyphen, "-". 
+In the case of "31_12_2023-NaBiS 1ml OA.txt",  "NaBis 1ml OA" would be the outcome and shown in the legend
 
