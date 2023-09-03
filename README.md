@@ -2,7 +2,9 @@
 
 #
 
-automates plotting wavelength by absorption graphs from raw measuring data.
+automates plotting 'wavelength by absorption' graphs from raw measuring data. 
+
+The python script takes all arguments after the first one that are passed into the program and tries to pass them through a series of functions to clean the data so it can be used for plotting a graph -- containing potentially multiple data sets -- generated with 'matplotlib.pyplot'.
 
 #
 ##### sample data
